@@ -1,0 +1,38 @@
+<html>
+<head>
+
+	<title>AI Object Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<center>
+  <h3 class="btn btn-warning heading">AI Object Finder</h3>
+  <h4 class="btn btn-info">Instructions: Type what you want find in the input box, click Start and go search for your object with this app</h4>
+  <h4 class="btn btn-info">Note: Make sure you type without spelling mistakes because COCOSSD model will only detect your object if it has correct spelling</h4>
+  <br><br>
+  <br>
+  <input type="text" placeholder="Type what you want to find" id="search_for">
+  <br>  <br>
+  <button onclick="start()" class="btn btn-success">Start</button>
+  <br>
+  <h4 id="noofobjects" class="btn btn-warning"></h4>
+  <h4 id="status" class="btn btn-danger"></h4>
+  <br>
+  <div class="copy_right_footer">
+    Developed By - Sonia L
+  </div>
+</center>
+<script src="main.js"></script>
+
+</body>
+
+</html>
